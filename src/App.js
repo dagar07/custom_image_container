@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import CustomImageContainer from './components/CustomImageContainer/CustomImageContainer';
+
 import './App.css';
+import './components/CustomImageContainer/animation.css';
 
 function App() {
+  let imgSrc = 'https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-600w-407021107.jpg';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CustomImageContainer
+        src={imgSrc}
+        alt="UK image"
+        animation="blurIn"
+        animationDuration="1s"
+        color="grey"
+        imgStyle={{
+          width: '300px',
+          height: '300px',
+          borderColor: 'blue',
+        }}
+      />
     </div>
   );
 }

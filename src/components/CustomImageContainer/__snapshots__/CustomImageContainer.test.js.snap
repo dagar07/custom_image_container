@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomImageContainer Component Snapshot test 1`] = `
+<img
+  onError={[Function]}
+  onLoad={[Function]}
+  src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-600w-407021107.jpg"
+  style={
+    Object {
+      "opacity": 0,
+    }
+  }
+/>
+`;
