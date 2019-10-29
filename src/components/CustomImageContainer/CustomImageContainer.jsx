@@ -93,12 +93,11 @@ class CustomImageContainer extends Component {
   }
 
   getImgDim(imgElement) {
-    const that = this;
     const dimInterval = setInterval(() => {
       const { width, height } = imgElement ? imgElement : {width : 0, height: 0};
       if (width && height) {
         clearInterval(dimInterval);
-        that.createPlaceholderContainer(width, height);
+        this.createPlaceholderContainer(width, height);
       }
     }, 5);
   }
@@ -144,7 +143,7 @@ CustomImageContainer.propTypes = {
   alt: PropTypes.string.isRequired, // this is alternative naame for umage
   imgStyle: PropTypes.object, // used to provide styling to img style tag
   placeholderImg: PropTypes.string, // used to provide placholder bg image
-  placeholderStyle: PropTypes.object, // uset to set styling for placeholder
+  placeholderStyle: PropTypes.object, // used to set styling for placeholder
   color: PropTypes.string, // if only color property set then used for placeholder bg color
   animation: PropTypes.string, // used to show animation in image
   animationDuration: PropTypes.string, // animation duration

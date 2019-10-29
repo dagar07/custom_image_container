@@ -11,14 +11,9 @@ function App() {
       <CustomImageContainer
         src={imgSrc}
         alt="UK image"
-        animation="blurIn"
+        animation="fillIn"
         animationDuration="1s"
         color="grey"
-        imgStyle={{
-          width: '300px',
-          height: '300px',
-          borderColor: 'blue',
-        }}
       />
     </div>
   );
